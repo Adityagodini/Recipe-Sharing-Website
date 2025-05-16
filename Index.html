@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanta Shala</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF8E1;
+            /* Warm cream background */
+            color: #4A3933;
+            /* Dark brown for text */
+        }
+
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, #E65100 0%, #FF9800 100%);
+            /* Rich orange gradient */
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            /* position: sticky;
+            top: 0px; */
+        }
+
+        header h1 {
+            margin: 0;
+            color: #FFF8E1;
+            /* Cream color for contrast */
+            font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+        }
+
+        header p {
+            padding-left: 280px;
+            font-family: cursive;
+        }
+
+        nav {
+            background-color: rgb(62, 112, 148);
+            padding: 8px;
+            margin: 2px;
+            border-radius: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            /* Removes the default list bullets */
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 25px;
+            font-weight: bolder;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            color: whitesmoke;
+        }
+
+        nav a:hover {
+            background-color: darkkhaki;
+            padding: 10px 25px;
+            box-shadow: 5px 3px 4px black;
+        }
+
+        /* section {
+            background-color: #e0e0dc;
+        } */
+        .Recipe {
+            display: flex;
+            background-color: #f6f0cb;
+            /* padding: 8px; */
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(217, 188, 188);
+            height: 200px;
+            width: 13%;
+            border-radius: 18px;
+            padding: 10px;
+            padding-left: 20px;
+            margin: 10px;
+            font-size: 17px;
+            font-weight: bolder;
+            overflow: hidden;
+        }
+
+        .box img {
+            height: 100%;
+            width: 102%;
+            border-radius: 2px;
+            object-fit: cover;
+            /* Ensures the image covers the box */
+        }
+
+        .box a {
+            display: block;
+            width: 100%;
+            height: 80%;
+            text-decoration: none;
+        }
+
+        .box p {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 5px;
+            color: black;
+        }
+
+        main h3 {
+            font-size: 30px;
+        }
+
+        .box:hover {
+
+            transform: scale(1.1);
+            /* Expands the image */
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            /* Adds a shadow effect */
+            z-index: 10;
+        }
+
+
+
+
+        .recipe {
+            display: flex;
+        }
+
+        .rep {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(17, 124, 143);
+            color: wheat;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(217, 188, 188);
+            height: 400px;
+            width: 23%;
+            border-radius: 18px;
+            padding: 10px;
+            padding-top: 0px;
+            margin: 10px;
+            font-size: 17px;
+            font-weight: bolder;
+            overflow: hidden;
+        }
+
+        .rep a {
+            display: block;
+            width: 100%;
+            height: 90%;
+            text-decoration: none;
+        }
+
+        .recipe img {
+            height: 95%;
+            /* Adjust image height to leave space for text */
+            width: 100%;
+            object-fit: fill;
+            border-radius: 9px 9px 2px 2px;
+        }
+
+        .rep p {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            color: white;
+        }
+
+        .rep:hover {
+            transform: scale(1.1);
+            /* Expands the image */
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            /* Adds a shadow effect */
+            z-index: 10;
+            /* Ensures image is above other elements */
+        }
+
+        .catogery {
+            display: flex;
+        }
+
+        .cat {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(17, 124, 143);
+            color: wheat;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(217, 188, 188);
+            height: 400px;
+            width: 23%;
+            border-radius: 18px;
+            padding: 10px;
+            padding-top: 0px;
+            margin: 10px;
+            font-size: 17px;
+            font-weight: bolder;
+            overflow: hidden;
+        }
+
+        .cat a {
+            display: block;
+            width: 100%;
+            height: 90%;
+            text-decoration: none;
+        }
+
+        .cat img {
+            height: 95%;
+            /* Adjust image height to leave space for text */
+            width: 100%;
+            object-fit: fill;
+            border-radius: 9px 9px 2px 2px;
+        }
+
+        .cat p {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            color: white;
+        }
+
+        .cat:hover {
+            transform: scale(1.1);
+            /* Expands the image */
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            /* Adds a shadow effect */
+            z-index: 10;
+            /* Ensures image is above other elements */
+        }
+
+        .founder {
+            /* background-color: #fff; */
+            text-align: center;
+        }
+
+        .founder img {
+            height: 300px;
+            border-radius: 80px;
+        }
+
+        .founder p {
+            padding: 25px;
+        }
+
+        footer {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        footer a {
+            text-decoration: none;
+            padding: 20px;
+            text-align: center;
+            float: left;
+            color: white;
+        }
+
+        footer a:hover {
+            color: rgb(20, 179, 131);
+        }
+
+
+        @keyframes popZoom {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(255, 165, 0, 0.6);
+            }
+
+            100% {
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            }
+        }
+
+        .box:hover {
+            animation: popZoom 0.4s ease forwards, pulseGlow 0.6s ease;
+            z-index: 10;
+        }
+
+        .rep:hover {
+            animation: popZoom 0.4s ease forwards, pulseGlow 0.6s ease;
+            z-index: 10;
+        }
+
+        .cat:hover {
+            animation: popZoom 0.4s ease forwards, pulseGlow 0.6s ease;
+            z-index: 10;
+        }
+
+        .box img,
+        .rep img,
+        .cat img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    header {
+        padding: 20px 10px; /* Adjust header padding */
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Smaller heading */
+    }
+
+    header p {
+        font-size: 0.9rem; /* Smaller tagline */
+        padding-left: 10px; /* Adjust tagline padding */
+        text-align: center; /* Center the tagline on mobile */
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center; /* Center navigation items */
+    }
+
+    nav li {
+        display: block; /* Stack navigation items vertically */
+        margin: 5px 0; /* Add spacing between nav items */
+    }
+
+    nav a {
+        display: flex; /* Make the entire link clickable */
+        padding: 15px;
+        font-size: 6px;
+        border-radius: 8px; /* Add a slight border-radius to each link */
+        margin: 5px 10px; /* Add some margin around the links */
+    }
+
+    .Recipe, .recipe, .catogery {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px; /* Add some padding around the sections */
+    }
+
+    .box, .rep, .cat {
+        width: 95%; /* Make the boxes take up more width */
+        height: auto; /* Adjust height automatically */
+        margin: 10px 0; /* Adjust vertical margin */
+    }
+
+    .box img, .rep img, .cat img {
+        height: auto;
+        width: 100%;
+        border-radius: 8px; /* Add border-radius to images */
+    }
+
+    .box p, .rep p, .cat p {
+        font-size: 1.1rem; /* Adjust font size inside boxes */
+        margin-top: 8px;
+    }
+
+    main h3 {
+        font-size: 1.8rem; /* Adjust heading size in main */
+        margin-top: 20px;
+    }
+
+    .founder img {
+        height: 150px; /* Smaller founder image */
+        border-radius: 50%;
+    }
+
+    .founder p {
+        padding: 15px;
+        font-size: 0.95rem; /* Adjust founder text size */
+    }
+
+    footer {
+        text-align: center; /* Center footer links */
+    }
+
+    footer a {
+        float: none; /* Don't float footer links */
+        display: block; /* Stack footer links vertically */
+        padding: 10px;
+        font-size: 0.9rem; /* Adjust footer link size */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 25px;
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+        padding-left: 20px;
+        text-align: center; /* Keep centered on tablets too */
+    }
+
+    nav ul {
+        text-align: center; /* Center navigation on tablets */
+    }
+
+    nav li {
+        display: inline-block; /* Keep inline on tablets */
+        margin: 0 10px;
+    }
+
+    nav a {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    .Recipe, .recipe, .catogery {
+        flex-direction: row; /* Keep as rows on tablets */
+        justify-content: space-around; /* Distribute items */
+        padding: 15px;
+    }
+
+    .box, .rep, .cat {
+        width: 48%; /* Two items per row on smaller tablets */
+        height: auto;
+        margin: 10px 0; /* Adjust vertical margin */
+    }
+
+    .box img, .rep img, .cat img {
+        height: auto;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .box p, .rep p, .cat p {
+        font-size: 1.1rem;
+        margin-top: 8px;
+    }
+
+    main h3 {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .founder img {
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .founder p {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    footer {
+        text-align: center; /* Center footer links */
+    }
+
+    footer a {
+        float: none;
+        display: inline-block; /* Keep inline on tablets */
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Large devices (large tablets and desktops, 769px and up) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Inherit styles from the base or adjust as needed */
+    .box, .rep, .cat {
+        width: 32%; /* Three items per row on larger tablets */
+    }
+}
+
+/* Extra large devices (large desktops, 1025px and up) */
+@media (min-width: 1025px) {
+    /* Your original styles for larger screens */
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vanta Shala</h1>
+        <p>-Home Like Food Recipe</p>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="veg.html">Veg Items</a></li>
+            <li><a href="non-veg.html">Non-Veg Items</a></li>
+            <li><a href="snacks.html">Snack Items</a></li>
+            <li><a href="cakes.html">Sweet Dishes</a></li>
+            <!-- <li><a href="Sweet">About</a></li>
+            <li><a href="Sweet">Login</a></li>
+            <li><a href="Sweet">Sign UP</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        <h3 style="text-align: center;">Popular Recipes</h3>
+        <div class="Recipe">
+
+            <div class="box box1"><a href="chanamasala.html"><img src="chana 1234.jpg" alt="chana masala">
+                    <p>Channa Masala</p>
+                </a></div>
+            <div class="box box2"><a href="malai kofta.html"><img src="malai123.jpg" alt="malai kofta">
+                    <p>Malai Kofta</p>
+                </a></div>
+            <div class="box box3"><a href="panner masala.html"><img src="pannermasala1.jpg" alt="panner masala">
+                    <p>Panner Masala</p>
+                </a></div>
+            <div class="box box4"><a href="dal makni.html"><img src="dalmakni12.jpg" alt="dal makni">
+                    <p>Dal Makni</p>
+                </a></div>
+            <div class="box box5"><a href="aalo gobi.html"><img src="aalogobi12.jpg" alt="aalo gobi">
+                    <p>Aalo Gobi</p>
+                </a></div>
+            <div class="box box6"><a href="butter chicken.html"><img src="butter chicken.jpeg" alt="Butter Chicken">
+                    <p>Butter chicken</p>
+                </a></div>
+        </div>
+        <h3 style="text-align: center; ">New Recipe</h3>
+        <section>
+            <div class="recipe">
+                <div class=" rep re1"><a href="dragon chicken.html"><img src="dragon3.jpg" alt="dragon chicken">
+                        <p>Dragon Chicken</p>
+                    </a></div>
+                <div class="rep re2"><a href="malai kofta.html"><img src="malai123.jpg" alt="kofta curry">
+                        <p>Kofta Curry</p>
+                    </a></div>
+                <div class="rep re3"><a href="spanish pizza.html"><img src="spnanishpizza1.jpg" alt="spanish pizza">
+                        <p>Spanish Pizza</p>
+                    </a></div>
+                <div class="rep re4"><a href="sushi.html"><img src="sushi1.jpg" alt="sushi">
+                        <p>Sushi</p>
+                    </a></div>
+                <div class="rep re4"><a href="dahivada.html"><img src="dahivada4.jpg" alt="sushi">
+                        <p>Dahi Vada</p>
+                    </a></div>
+            </div>
+        </section>
+        <h3 style="text-align: center; ">Find More</h3>
+        <section>
+            <div class="catogery">
+                <div class=" cat cat1"><a href="breakfast.html"><img src="Breakfast.jpg" alt="Break Fast">
+                        <p>Break Fast</p>
+                    </a></div>
+                <div class="cat cat2"><a href="snacks.html"><img src="snacksthumb.jpg" alt="Snacks">
+                        <p>Snacks</p>
+                    </a></div>
+                <div class="cat cat3"><a href="curry.html"><img src="currythumb.jpg" alt="Curry">
+                        <p>Curry</p>
+                    </a></div>
+                <div class="cat cat4"><a href="cakes.html"><img src="cakesthuunb.jpg" alt="Cakes">
+                        <p>Cakes</p>
+                    </a></div>
+                <div class="cat cat4"><a href="chicken.html"><img src="chickenthumb.jpg" alt="Chicken">
+                        <p>Chicken</p>
+                    </a></div>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer>
+
+        <a href="Index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="#">contact us</a>
+        <a href="aditya.html">&copy; 2025 Aditya</a>
+    </footer>
+</body>
+
+</html>
+
+
