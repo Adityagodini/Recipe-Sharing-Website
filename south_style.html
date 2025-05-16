@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Style Breakfast</title>
+    <style>
+        /* Vibrant Background */
+        body {
+            background-color: #FFF7E0; /* Light warm background */
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        
+        header {
+            background: linear-gradient(135deg, #FFD166, #FF9A76);
+            padding: 30px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 10%;
+            gap: 25px;
+            width: 70%;
+            margin: auto;
+        }
+
+        /* Buttons */
+        .box {
+            background: linear-gradient(135deg, #FFB703, #FB8500);
+            color: white;
+            padding: 20px;
+            width: 100%;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 40px;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-30px);
+            opacity: 0;
+            animation: slideIn 0.9s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .box:nth-child(1) { animation-delay: 0.2s; }
+        .box:nth-child(2) { animation-delay: 0.4s; }
+        .box:nth-child(3) { animation-delay: 0.6s; }
+        .box:nth-child(4) { animation-delay: 0.8s; }
+        .box:nth-child(5) { animation-delay: 1s; }
+        .box:nth-child(6) { animation-delay: 1.2s; }
+
+        /* Hover Effects */
+        .box:hover {
+            transform: scale(1.08); /* Poppy effect */
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            filter: brightness(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>South Style Breakfast 🍽️</h1>
+    </header>
+
+    <div class="container">
+        <a href="andhra.html" class="box">🍛 ANDHRA'S FAMOUS BREAKFAST</a>
+        <a href="telangana.html" class="box">🥘 TELANGANA'S FAMOUS BREAKFAST</a>
+        <a href="karnataka.html" class="box">🍲 KARNATAKA'S FAMOUS BREAKFAST</a>
+        <a href="kerala.html" class="box">🥙 KERALA'S FAMOUS BREAKFAST</a>
+        <a href="tamilnadu.html" class="box">🍢 TAMIL NADU'S FAMOUS BREAKFAST</a>
+        <!-- <a href="file6.html" class="box">'S FAMOUS BREAKFAST</a> -->
+    </div>
+
+</body>
+</html>
