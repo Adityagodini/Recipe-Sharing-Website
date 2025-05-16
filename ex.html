@@ -1,0 +1,789 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Links Page</title>
+    <style>
+        /* Background with white gradient */
+        body {
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container for rows */
+        
+
+        /* Styling for each div (link box) */
+     
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px; /* Adjusted font size */
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="box"><a href="page1.html">Page 1</a></div>
+        <div class="box"><a href="page2.html">Page 2</a></div>
+        <div class="box"><a href="page3.html">Page 3</a></div>
+    </div>
+
+    <div class="row">
+        <div class="box"><a href="page4.html">Page 4</a></div>
+        <div class="box"><a href="page5.html">Page 5</a></div>
+        <div class="box"><a href="page6.html">Page 6</a></div>
+    </div>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat tiffin's</title>
+    <style>
+         header{
+            background-color:#c5ddea;
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 8px;
+        }
+    
+       
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 25px;
+            margin-top: 20px;
+        }
+        .rep {
+        width: 25%; /* Reduced width */
+        height: 180px; /* Reduced height */
+        background-color: #ecbe90;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: slideDownSmooth 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+
+        @keyframes slideDownSmooth {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            60%{
+                opacity: 0.5;
+                transform: translateX(5px);
+            }
+            80%{
+                opacity: 0.8;
+                transform: translateX(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+        .rep:nth-child(1), .rep:nth-child(4), .rep:nth-child(7) { animation-delay: 0.2s; }
+        .rep:nth-child(2), .rep:nth-child(5),.rep:nth-child(8)  { animation-delay: 0.4s; }
+        .rep:nth-child(3), .rep:nth-child(6), .rep:nth-child(9) { animation-delay: 0.6s; }
+    
+        .rep a{
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        }
+        .rep img{
+        height: 80%;
+        width: 70%;
+        overflow: hidden;
+        border-radius: 8px;
+        object-fit: cover;
+        margin: 10px;
+        }
+        .rep p{
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 5px;
+            color:rgb(137, 83, 64);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gujarat Tiffin's</h1>
+    </header>
+    <main>
+       <div class="container">
+        <div class="rep"><a href=""><img src="dal makni.jpeg" alt="aditya"><p>aditya</p></a></div>
+        <div class="rep"><a href=""><img src="dal makni.jpeg" alt="aditya"><p>aditya</p></a></div>
+        <div class="rep"><a href=""><img src="dal makni.jpeg" alt="aditya"><p>aditya</p></a></div>
+    </div>
+       <div class="container">
+        <div class="rep"><a href=""><img src="dal makni.jpeg" alt="aditya"><p>aditya</p></a></div>
+        <div class="rep"><a href=""><img src="dal makni.jpeg" alt="aditya"><p>aditya</p></a></div>
+        <div class="rep"><a href=""><img src="dal makni.jpeg" alt="aditya"><p>aditya</p></a></div>
+    </div>
+       <div class="container">
+        <div class="rep"><a href=""><img src="dal makni.jpeg" alt="aditya"><p>aditya</p></a></div>
+        <div class="rep"><a href=""><img src="dal makni.jpeg" alt="aditya"><p>aditya</p></a></div>
+        <div class="rep"><a href=""><img src="dal makni.jpeg" alt="aditya"><p>aditya</p></a></div>
+    </div>
+    </main>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Recipe Sharing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF5E1;
+            color: #333;
+        }
+        
+        /* Navbar */
+        nav {
+            background-color: #ff5833c9;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: 0.3s;
+            border-radius: 20px;
+        }
+        nav ul li a:hover {
+            background-color: #FFBD69;
+            color: black;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('sushi.jpeg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 24px;
+        }
+        
+        /* Recipes Section */
+        .recipes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .recipe-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            /* text-decoration: none; */
+        }
+        
+        .recipe-card:hover {
+            transform: scale(1.05);
+        }
+        .recipe-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .recipe-card h3 {
+            margin-top: 15px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #FF5733;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <h2 style="color: white;">Recipe Share</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hero">
+        <h1>Welcome to Recipe Sharing</h1>
+        <p>Discover & Share Delicious Recipes!</p>
+    </div>
+    
+    <section class="recipes">
+        <div class="recipe-card">
+            <img src="dahivada2.jpg" alt="Recipe 1">
+            <h3>Delicious Pasta</h3>
+            <p>A classic pasta dish with rich flavors.</p>
+        </div>
+        <div class="recipe-card">
+            <img src="kachori2.jpg" alt="Recipe 2">
+            <h3>Homemade Pizza</h3>
+            <p>Perfectly baked with fresh ingredients.</p>
+        </div>
+        <div class="recipe-card">
+            <img src="thekua2.jpg" alt="Recipe 3">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and moist chocolate cake for dessert.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Recipe Share | All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanta Shala</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            padding: 30px;
+            color: white;
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        header p {
+            font-size: 16px;
+            font-family: cursive;
+        }
+        nav {
+            background-color: #444;
+            padding: 12px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #ffda79;
+        }
+        main {
+            padding: 20px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 24px;
+            color: #444;
+        }
+        .Recipe, .recipe, .catogery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+        .box, .rep, .cat {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+            padding: 10px;
+            width: 200px;
+        }
+        .box:hover, .rep:hover, .cat:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .box img, .rep img, .cat img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .box p, .rep p, .cat p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #ff6f61;
+        }
+        .founder {
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .founder img {
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-size: 14px;
+        }
+        footer a {
+            color: #ffda79;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vanta Shala</h1>
+        <p>Home Like Food Recipe</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Veg Items</a></li>
+            <li><a href="#">Non-Veg Items</a></li>
+            <li><a href="#">Dairy Items</a></li>
+            <li><a href="#">Sweet Dishes</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Popular Recipes</h3>
+        <div class="Recipe">
+            <div class="box"><img src="chana_masala.jpg" alt="Chana Masala"><p>Chana Masala</p></div>
+            <div class="box"><img src="malai_kofta.jpg" alt="Malai Kofta"><p>Malai Kofta</p></div>
+            <div class="box"><img src="paneer_masala.jpg" alt="Paneer Masala"><p>Paneer Masala</p></div>
+        </div>
+        <h3>New Recipe</h3>
+        <div class="recipe">
+            <div class="rep"><img src="dragon_chicken.jpg" alt="Dragon Chicken"><p>Dragon Chicken</p></div>
+            <div class="rep"><img src="kofta_curry.jpg" alt="Kofta Curry"><p>Kofta Curry</p></div>
+        </div>
+        <h3>Find More</h3>
+        <div class="catogery">
+            <div class="cat"><img src="breakfast.jpg" alt="Breakfast"><p>Breakfast</p></div>
+            <div class="cat"><img src="snacks.jpg" alt="Snacks"><p>Snacks</p></div>
+        </div>
+        <section class="founder">
+            <h2>Our Founder</h2>
+            <img src="founder.jpg" alt="Aditya Godini">
+            <h2>Aditya Godini</h2>
+            <p>Passionate about food and making recipes accessible to everyone.</p>
+        </section>
+    </main>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">About Us</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+        <p>&copy; 2025 Aditya</p>
+    </footer>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Bake Cakes</title>
+    <style>
+         /* Base styles */
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF8E1; /* Warm cream background */
+            color: #4A3933; /* Dark brown for text */
+        }
+
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, #E65100 0%, #FF9800 100%); /* Rich orange gradient */
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #FFF8E1; /* Cream color for contrast */
+            font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+        }
+
+        /* Container for food items */
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 35px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        /* Food item cards */
+        .rep {
+            width: 25%;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #FFD180; /* Light orange for all cards */
+            border: 2px solid #FF9800;
+             animation: flipInX 2s ease forwards;
+            transform-origin: top; */
+            
+             animation: fadeRotate 1s ease forwards; 
+        }
+
+        /* Hover effect on food item cards */
+        .rep:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            filter: brightness(1.05);
+        }
+        
+
+@keyframes fadeRotate {
+  from { opacity: 0; transform: rotate(-10deg) translateY(20px); }
+  to { opacity: 1; transform: rotate(0deg) translateY(0); }
+}
+
+/* 
+@keyframes bounceIn {
+  0% { opacity: 0; transform: scale(0.3); }
+  50% { transform: scale(1.05); opacity: 1; }
+  70% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+} */
+
+        /* .zoomIn {  }
+
+@keyframes zoomIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+} */
+
+        /* .flipInX {
+    } */
+
+    /* @keyframes flipInX {
+      0% { transform: perspective(400px) rotateX(90deg); opacity: 0; }
+      100% { transform: perspective(400px) rotateX(0); opacity: 1; }
+    }
+    */
+    /* .fadeInUp {  }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    } */
+
+
+
+        /* .rep:nth-child(1), .rep:nth-child(4), .rep:nth-child(7) { animation-delay: 0.2s; }
+        .rep:nth-child(2), .rep:nth-child(5), .rep:nth-child(8) { animation-delay: 0.4s; }
+        .rep:nth-child(3), .rep:nth-child(6), .rep:nth-child(9) { animation-delay: 0.6s; } */
+
+        /* Link and image styles */
+        .rep a {
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rep img {
+            height: 75%;
+            width: 75%;
+            overflow: hidden;
+            border-radius: 8px;
+            object-fit: cover;
+            margin: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .rep:hover img {
+            transform: scale(1.05);
+        }
+
+        .rep p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 8px;
+            color: #7D3C0A; /* Rich brown for text */
+            transition: color 0.3s ease;
+            padding: 0 10px;
+        }
+
+        .rep:hover p {
+            color: #E65100; /* Darker orange on hover */
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .rep {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>No-Bake Cakes</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="rep"><a href="no-bake-cheesecake.html"><img src="no-bake-cheesecake.jpeg" alt="No-Bake Cheesecake"><p> Cheesecake </p></a></div>
+            <div class="rep"><a href="no-bake-chocolate-biscuit-cake.html"><img src="no-bake-chocolate-biscuit-cake.jpeg" alt="No-Bake Chocolate Biscuit Cake"><p>No-Bake Chocolate Biscuit Cake </p></a></div>
+            <div class="rep"><a href="no-bake-oreo-cake.html"><img src="no-bake-oreo-cake.jpeg" alt="No-Bake Oreo Cake"><p>No-Bake Oreo Cake </p></a></div>
+        </div>
+        <div class="container">
+            <div class="rep"><a href="no-bake-mango-cheesecake.html"><img src="no-bake-mango-cheesecake.jpeg" alt="No-Bake Mango Cheesecake"><p>No-Bake Mango Cheesecake</p></a></div>
+            <div class="rep"><a href="no-bake-strawberry-cake.html"><img src="no-bake-strawberry-cake.jpeg" alt="No-Bake Strawberry Cake"><p>No-Bake Strawberry Cake </p></a></div>
+            <div class="rep"><a href="no-bake-nutella-cake.html"><img src="no-bake-nutella-cake.jpeg" alt="No-Bake Nutella Cake"><p>No-Bake Nutella Cake</p></a></div>
+        </div>
+        <div class="container">
+            <div class="rep"><a href="no-bake-blueberry-cheesecake.html"><img src="no-bake-blueberry-cheesecake.jpeg" alt="No-Bake Blueberry Cheesecake"><p>No-Bake Blueberry Cheesecake </p></a></div>
+            <div class="rep"><a href="no-bake-peanut-butter-chocolate-cake.html"><img src="no-bake-peanut-butter-chocolate-cake.jpeg" alt="No-Bake Peanut Butter Chocolate Cake"><p>No-Bake Peanut Butter Chocolate Cake </p></a></div>
+            <div class="rep"><a href="no-bake-tiramisu-cake.html"><img src="no-bake-tiramisu-cake.jpeg" alt="No-Bake Tiramisu Cake"><p>No-Bake Tiramisu Cake </p></a></div>
+        </div>
+        <div class="container">
+            <div class="rep"><a href="no-bake-coconut-cake.html"><img src="no-bake-coconut-cake.jpeg" alt="No-Bake Coconut Cake"><p>No-Bake Coconut Cake</p></a></div>
+            <div class="rep"><a href="no-bake-lemon-icebox-cake.html"><img src="no-bake-lemon-icebox-cake.jpeg" alt="No-Bake Lemon Icebox Cake"><p>No-Bake Lemon Icebox Cake </p></a></div>
+            <div class="rep"><a href="no-bake-mocha-cake.html"><img src="no-bake-mocha-cake.jpeg" alt="No-Bake Mocha Cake"><p>No-Bake Mocha Cake </p></a></div>
+        </div>
+        <div class="container">
+            <div class="rep"><a href="no-bake-biscoff-cake.html"><img src="no-bake-biscoff-cake.jpeg" alt="No-Bake Biscoff Cake"><p>No-Bake Biscoff Cake </p></a></div>
+            <div class="rep"><a href="no-bake-ice-cream-cake.html"><img src="no-bake-ice-cream-cake.jpeg" alt="No-Bake Ice Cream Cake"><p>No-Bake Ice Cream Cake </p></a></div>
+            <div class="rep"><a href="no-bake-caramel-pecan-cake.html"><img src="no-bake-caramel-pecan-cake.jpeg" alt="No-Bake Caramel Pecan Cake"><p>No-Bake Caramel Pecan Cake </p></a></div>
+        </div>
+        <div class="container">
+            <div class="rep"><a href="no-bake-chocolate-mousse-cake.html"><img src="no-bake-chocolate-mousse-cake.jpeg" alt="No-Bake Chocolate Mousse Cake"><p>No-Bake Chocolate Mousse Cake </p></a></div>
+            <div class="rep"><a href="no-bake-pumpkin-cheesecake.html"><img src="no-bake-pumpkin-cheesecake.jpeg" alt="No-Bake Pumpkin Cheesecake"><p>No-Bake Pumpkin Cheesecake </p></a></div>
+            <div class="rep"><a href="no-bake-avocado-lime-cake.html"><img src="no-bake-avocado-lime-cake.jpeg" alt="No-Bake Avocado Lime Cake"><p>No-Bake Avocado Lime Cake</p></a></div>
+        </div>
+        <div class="container">
+            <div class="rep"><a href="no-bake-raspberry-white-chocolate-cake.html"><img src="no-bake-raspberry-white-chocolate-cake.jpeg" alt="No-Bake Raspberry White Chocolate Cake"><p>No-Bake Raspberry White Chocolate Cake </p></a></div>
+            <div class="rep"><a href="no-bake-yogurt-cake.html"><img src="no-bake-yogurt-cake.jpeg" alt="No-Bake Yogurt Cake"><p>No-Bake Yogurt Cake</p></a></div>
+            <div class="rep"><a href="fruit-cake.html"><img src="fruit-cake.jpeg" alt="Fruit Cake"><p>Fruit Cake </p></a></div>
+        </div>
+    </main>
+</body>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rep Animation Showcase</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 50px;
+    }
+
+    .rep {
+      padding: 20px 40px;
+      border: 1px solid #555;
+      background: #1e1e1e;
+      border-radius: 10px;
+      opacity: 0;
+    }
+
+    /* ANIMATION DELAYS */
+    .rep:nth-of-type(1) { animation-delay: 0.2s; }
+    .rep:nth-of-type(2) { animation-delay: 0.4s; }
+    .rep:nth-of-type(3) { animation-delay: 0.6s; }
+    .rep:nth-of-type(4) { animation-delay: 0.8s; }
+    .rep:nth-of-type(5) { animation-delay: 1s; }
+
+    /* 1. Fade In Up */
+    .fadeInUp { animation: fadeInUp 0.8s ease forwards; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 2. Zoom In */
+    .zoomIn { animation: zoomIn 0.8s ease forwards; }
+
+    @keyframes zoomIn {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    /* 3. Flip In X */
+    .flipInX {
+      animation: flipInX 0.9s ease forwards;
+      transform-origin: top;
+    }
+
+    @keyframes flipInX {
+      0% { transform: perspective(400px) rotateX(90deg); opacity: 0; }
+      100% { transform: perspective(400px) rotateX(0); opacity: 1; }
+    }
+
+    /* 4. Bounce In */
+    .bounceIn { animation: bounceIn 0.9s ease forwards; }
+
+    @keyframes bounceIn {
+      0% { opacity: 0; transform: scale(0.3); }
+      50% { transform: scale(1.05); opacity: 1; }
+      70% { transform: scale(0.95); }
+      100% { transform: scale(1); }
+    }
+
+    /* 5. Fade Rotate */
+    .fadeRotate { animation: fadeRotate 1s ease forwards; }
+
+    @keyframes fadeRotate {
+      from { opacity: 0; transform: rotate(-10deg) translateY(20px); }
+      to { opacity: 1; transform: rotate(0deg) translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="rep fadeInUp">🔥 Fade In Up</div>
+  <div class="rep zoomIn">🔍 Zoom In</div>
+  <div class="rep flipInX">🎴 Flip In X</div>
+  <div class="rep bounceIn">🧸 Bounce In</div>
+  <div class="rep fadeRotate">🌀 Fade + Rotate</div>
+
+</body>
+</html> -->
