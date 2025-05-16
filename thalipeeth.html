@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thallipeth</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF8E1; /* Warm cream background */
+            color: #4A3933; /* Dark brown for text */
+        }
+
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, #E65100 0%, #FF9800 100%); /* Rich orange gradient */
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #FFF8E1; /* Cream color for contrast */
+            font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+        }
+        .i1 img{
+            width: 500px;
+            height: 400px;
+            float: right;
+            border-radius: 8px 8px 8px 142px;
+            position: relative;
+            animation: slideIn 1.5s ease-out forwards;
+        }
+        .i1 img:hover{
+            border-radius: 30px 30px 21px 21px;
+            transform: scale(1.05); /* Expands the image */
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+            z-index: 8;
+        }
+
+        .i2 img{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            border-radius: 13px 13px 90px 13px;
+            animation: slideOut 1.5s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                right: -120%;
+            }
+            to {
+                right: 0%;
+            }
+        }
+
+        @keyframes slideOut {
+            from {
+                left: -120%;
+            }
+            to {
+                left: 0%;
+            }
+        }
+        
+        .i1 ul{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        }
+        .i2 dl{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            float: right;
+        }
+        .i1 h2{
+            text-decoration: underline;
+            padding: 19px;
+            margin: 19px;
+            color: #db5a5a;
+            font-size: 40px;
+        }
+        .i2 h2{
+            text-decoration: underline;
+            padding: 19px;
+            margin: 19px;
+            color: #db5a5a;
+            font-size: 40px;
+            text-align: center;
+        }
+        dt{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header> <h1>Thalipeeth</h1></header>
+    <div class="i1">
+      <img src="parata i3.jpg" alt="Thalipeeth Image">
+      <h2>INGREDIENTS</h2>
+      <ul>
+        <h3>🧺 For Thalipeeth Dough:</h3>
+        <li>1 cup bhajani flour (traditional thalipeeth flour – see note below)</li>
+        <li>1 medium onion – finely chopped</li>
+        <li>2 tbsp fresh coriander – chopped</li>
+        <li>1–2 green chilies – finely chopped</li>
+        <li>½ tsp cumin seeds</li>
+        <li>1 tsp sesame seeds</li>
+        <li>¼ tsp turmeric powder</li>
+        <li>½ tsp red chili powder</li>
+        <li>Salt – to taste</li>
+        <li>Water – as needed</li>
+        <li>Oil or ghee – for roasting</li>
+      </ul>
+    </div><hr>
+  
+    <div class="i2">
+      <h2>Recipe</h2>
+      <img src="parata i2.jpg" alt="Thalipeeth Preparation">
+      <dl>
+        <dt>1️⃣ Make the Dough:</dt>
+        <dd>- In a mixing bowl, add flours (or bhajani) + spices + chopped onions, coriander, green chilies, and salt.</dd>
+        <dd>- Mix well.</dd>
+        <dd>- Add water little by little to form a soft, pliable dough (slightly sticky is okay).</dd>
+        <dd>- 💡 You can also knead in some grated lauki (bottle gourd) or carrot for a veggie boost!</dd>
+  
+        <dt>2️⃣ Shape the Thalipeeth:</dt>
+        <dd>- <strong>Traditional way:</strong> Take a small ball of dough.</dd>
+        <dd>- Wet a plastic sheet or banana leaf, place dough ball on it. </dd>
+            <dd>Flatten it using wet fingers into a thin circle with little holes in the center</dd>
+        <dd>- <strong>Modern hack:</strong> Flatten directly on a greased pan or tawa with wet hands.</dd>
+  
+        <dt>3️⃣ Cook the Thalipeeth:</dt>
+        <dd>- Heat a tawa (preferably cast iron).</dd>
+        <dd>- Drizzle a little oil/ghee.</dd>
+        <dd>- Place the flattened thalipeeth on it.</dd>
+        <dd>- Cook on medium heat until crisp and golden on both sides.</dd>
+        <dd>- Add a bit of ghee or butter on top before serving.</dd>
+  
+        <dt>🍽️ Serve With:</dt>
+        <dd>- Curd (dahi) or white butter</dd>
+        <dd>- Thecha (Maharashtrian spicy green chili chutney) 🌶️</dd>
+        <dd>- Pickle or jaggery</dd>
+      </dl>
+    </div>
+  </body>
+  
+<!-- <body>
+   <header> <h1>Sushi</h1></header>
+  <div class="i1"> <img src="sushi2.jpeg" alt="" >
+    <h2>INGREDIENTS</h2>
+    <ul>
+        <h3>For Sushi Rice:</h3>
+        <li>1 cup sushi rice (short-grain rice)</li>
+        <li>1 1/4 cup water</li>
+        <li>2 tbsp rice vinegar</li>
+        <li>1 tbsp sugar</li>
+        <li>1/2 tsp salt</li>
+        <h3>For Rolling Sushi:</h3>
+        <li>1/2 carrot (cut into thin strips)</li>
+           <li>4 nori sheets (seaweed)</li>
+           <li>1/2 cucumber (cut into thin strips)</li>
+           <li>1 tsp sesame seeds (for garnish, optional)</li>
+           <li>2 tbsp cream cheese or mayonnaise (optional, for extra flavor)</li>
+           <li>100g fresh salmon/tuna or imitation crab (optional for non-vegetarian sushi)</li>
+           <li>1/2 avocado (sliced) (optional)</li>
+           <h3>For Serving:</h3>
+           <li>Soy sauce (for dipping)</li>
+           <li>Wasabi (spicy Japanese paste, optional)</li>
+           <li>Pickled ginger (for cleansing the palate, optional)</li>
+        
+    </ul>
+</div><hr>
+<div class="i2">
+    <h2>Recipe</h2>
+    <img src="sushi3.jpeg" alt="">
+ <dl>
+   <dt>Cook and Season the Rice</dt>
+   <dd>-Rinse the sushi rice 2-3 times in cold water until the water runs clear.</dd>
+   <dd>-Cook the rice with water in a rice cooker or saucepan until fully done.</dd>
+   <dd>-In a small bowl, mix rice vinegar, sugar, and salt, then heat it slightly until dissolved.</dd>
+   <dd>-Gently fold the vinegar mixture into the rice and let it cool to room temperature.</dd>
+   <dt>Prepare the Filling:</dt>
+   <dd>-Cut cucumber, carrot, avocado, and seafood (if using) into thin strips.</dd>
+   <dd>-Place all the ingredients nearby for easy rolling.</dd>
+   <dt>Roll the Sushi:</dt>
+   <dd>-Place a bamboo sushi mat (makisu) on a clean surface and put a nori sheet on top (shiny side down).</dd>
+   <dd>-Wet your hands slightly and spread a thin layer of sushi rice evenly over the nori, leaving about 1 inch at the top edge free.</dd>
+   <dd>-Arrange fillings (cucumber, carrot, avocado, and seafood) in a line near the bottom of the rice.</dd>
+   <dd>-Gently lift the edge of the sushi mat and start rolling tightly, pressing slightly to seal the roll.</dd>
+   <dd>-Once rolled, use a sharp knife to slice it into 6-8 pieces.</dd>
+   <dt>Serve the Sushi</dt>
+   <dd>-Arrange sushi pieces on a plate and sprinkle with sesame seeds.</dd>
+   <dd>-Serve with soy sauce, wasabi, and pickled ginger.</dd>
+   <dt>Pro Tips:</dt>
+   <dd>-✔ Use a sharp knife and wipe it with a damp cloth before cutting to prevent rice from sticking.</dd>
+   <dd>-✔ For inside-out rolls (Uramaki), place plastic wrap over the bamboo mat, flip the rice-covered nori, and then roll.</dd>
+   <dd>-✔ Customize your fillings with cooked shrimp, tempura, tofu, or any other ingredients you like.</dd>
+</dl>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+ -->
